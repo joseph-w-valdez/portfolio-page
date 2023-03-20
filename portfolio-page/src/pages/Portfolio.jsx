@@ -1,30 +1,30 @@
 import React from 'react'
-import { Parallax } from 'react-scroll-parallax';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 const Portfolio = () => {
 
   return (
   <>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/6th.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/Sun.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/5th.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/4th.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/3rd.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/2nd.png" alt="" />
-    </Parallax>
-    <Parallax translateY={[-20, 20]}>
-        <img src="./images/Bottom.png" alt="" />
+    <Parallax pages={7} className='container'>
+            <img src="../images/6th.png" alt='' className='background'/>
+        <ParallaxLayer speed={-0.5}>
+            <img src="../images/Sun.png" alt=''/>
+        </ParallaxLayer>
+        <ParallaxLayer speed={0}>
+            <img src="../images/5th.png" alt=''/>
+        </ParallaxLayer>
+        <ParallaxLayer speed={0.5}>
+            <img src="../images/4th.png" alt=''/>
+        </ParallaxLayer>
+        <ParallaxLayer speed={1}>
+            <img src="../images/3rd.png" alt=''/>
+        </ParallaxLayer>        
+        <ParallaxLayer speed={1.25}>
+            <img src="../images/2nd.png" alt=''/>
+        </ParallaxLayer>
+        <ParallaxLayer speed={1.5}>
+            <img src="../images/Bottom.png" alt='' className='bottom'/>
+        </ParallaxLayer>
     </Parallax>
   </>
   

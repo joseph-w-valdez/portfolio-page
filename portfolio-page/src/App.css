@@ -37,7 +37,19 @@
   }
 }
 
+body {
+  background-color: #020A17;
+}
+
 img {
   width: 100%;
-  position: absolute;
+}
+
+.background {
+  position:fixed
+}
+
+.bottom {
+  position: relative;
+  top: 200px;
 }
