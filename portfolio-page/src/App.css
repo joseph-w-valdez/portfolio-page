@@ -41,15 +41,19 @@ body {
   background-color: #020A17;
 }
 
+.container {
+  position: fixed;
+}
+
 img {
   width: 100%;
 }
 
 .background {
-  position:fixed
+  position:fixed;
 }
 
 .bottom {
   position: relative;
-  top: 200px;
+  top: 20rem;
 }
