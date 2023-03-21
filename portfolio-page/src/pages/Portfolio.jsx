@@ -5,7 +5,7 @@ const Portfolio = () => {
 
   return (
   <>
-    <Parallax pages={1.5} scrollOffset={1000} className='container'>
+    <Parallax pages={1.3} className='container'>
         <ParallaxLayer speed={-0.75} factor={0}>
             <img src="../images/6th.png" alt='' className='background'/>
         </ParallaxLayer>
@@ -21,7 +21,7 @@ const Portfolio = () => {
         <ParallaxLayer speed={0.3} factor={0.1}>
             <img src="../images/3rd.png" alt=''/>
         </ParallaxLayer>        
-        <ParallaxLayer speed={0.3} factor={0.1}>
+        <ParallaxLayer speed={0.3} factor={1}>
             <img src="../images/2nd.png" alt=''/>
         </ParallaxLayer>
         <ParallaxLayer speed={1.25} factor={0.1}>
