@@ -18,8 +18,8 @@ const Portfolio = () => {
 
   return (
     <div className='container' style={{ backgroundColor: '#0d0d0d' }}>
-      <Parallax pages={4}>
-        <ParallaxLayer speed={-0.5} factor={5} className='page'>
+      <Parallax pages={1.75}>
+        <ParallaxLayer speed={0} factor={5} className='page'>
           <img src="../images/6th.png" alt='' className='background'/>
         </ParallaxLayer>
         <ParallaxLayer speed={-0.3} factor={1}>
@@ -41,8 +41,9 @@ const Portfolio = () => {
           <img src="../images/Bottom.png" alt='' className='bottom'/>
         </ParallaxLayer>
         <ParallaxLayer speed={-0.3} factor={1}>
-          <div>
+          <div className='header'>
             <h1 style={fade} className='portfolio-header'>WELCOME TO MY PORTFOLIO</h1>
+            <div className='flex-basis'></div>
             <h3 style={slide} className='scroll-message'>[Scroll down to learn about me!]</h3>
           </div>
         </ParallaxLayer>
