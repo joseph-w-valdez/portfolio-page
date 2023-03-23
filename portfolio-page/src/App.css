@@ -72,16 +72,23 @@ img {
 
 .page {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #020A17;
+  position: relative;
 }
 
-.container {
-  position: fixed;
+.parallax-container {
+  position: relative;
   height: 100vh;
   width: 100%;
   max-width:1200px;
   min-width: 600px;
+  background-color: #020A17;
+}
+
+.parallax {
+  background-color: #020A17;
 }
 
 .header {
@@ -106,6 +113,15 @@ img {
 .portfolio-header, .scroll-message {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+main {
+  position: absolute;
+  bottom: -450px;
+}
+
+main>p {
+  margin-right: 400px;
 }
 
 @media only screen and (max-width:768px) {
