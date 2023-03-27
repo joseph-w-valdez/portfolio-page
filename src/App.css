@@ -82,13 +82,15 @@ img {
   position: relative;
 }
 
+.full-container{
+  width: 100%;
+}
+
 .parallax-container {
   position: relative;
   height: 100%;
   min-height: 100vh;
   width: 100%;
-  max-width:1200px;
-  min-width: 600px;
   background-color: #020A17;
 }
 
@@ -151,15 +153,18 @@ main>p {
   top: -0.7rem;
 }
 
+@media only screen and (max-width:2000px) {
+  .content-container {
+    margin-top: 16rem;
+  }
+}
+
 @media only screen and (max-width:768px) {
   .portfolio-header {
     font-size: 2rem;
   }
   .scroll-message {
     font-size: 1.3rem;
-  }
-  .content-container {
-    width: 100vw;
   }
 }
 
