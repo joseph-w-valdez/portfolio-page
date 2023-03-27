@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import Header from '../components/Header'
+import Main from '../components/Main'
 import ParallaxContent from '../components/ParallaxContent'
 
 
@@ -31,6 +32,7 @@ const Portfolio = () => {
               <Header />
             </div>
             <img src="../images/full.png" alt="" />
+            <Main />
           </div>
         )
       }

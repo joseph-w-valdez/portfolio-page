@@ -17,10 +17,10 @@ const fade = useSpring({
 
   return (
     <div className='header'>
-              <h1 style={fade} className='portfolio-header'>WELCOME TO MY PORTFOLIO</h1>
-              <div className='flex-basis'></div>
-              <h3 style={slide} className='scroll-message'>[Scroll down to learn about me!]</h3>
-            </div>
+        <h1 style={fade} className='portfolio-header'>WELCOME TO MY PORTFOLIO</h1>
+        <div className='flex-basis'></div>
+        <h3 style={slide} className='scroll-message'>[Scroll down to learn about me!]</h3>
+    </div>
   )
 }
 

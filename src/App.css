@@ -169,9 +169,7 @@ main>p {
   main {
     justify-content: center;
   }
-  .content-container {
-    width: 70%;
-  }
+
   .header {
     margin-top: 20px
   }
@@ -193,9 +191,7 @@ main>p {
   .scroll-message {
     font-size: 1.2rem;
   }
-  .content-container {
-    width: 60%;
-  }
+
 }
 
 
@@ -208,8 +204,5 @@ main>p {
   }
   .scroll-message {
     font-size: 1rem;
-  }
-  .content-container {
-    width: 50%;
   }
 }
