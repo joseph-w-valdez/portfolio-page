@@ -1,21 +1,10 @@
 import React from 'react'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
-import {useSpring} from '@react-spring/web'
+
+import Header from './Header'
 import Main from './Main'
 
 const ParallaxContent = () => {
-
-  const fade = useSpring({
-    to: { opacity: 1 },
-    from: { opacity: 0 },
-    config: { duration: 1000 },
-  })
-
-  const slide = useSpring({
-    to: { x: '0%' },
-    from: { x: '-100%' },
-    config: { duration: 2000 },
-  })
 
   return (
     <Parallax pages={1.3} className='parallax'>
@@ -41,11 +30,7 @@ const ParallaxContent = () => {
             <img src="../images/Bottom.png" alt='' className='bottom'/>
           </ParallaxLayer>
           <ParallaxLayer speed={-0.3} factor={1}>
-            <div className='header'>
-              <h1 style={fade} className='portfolio-header'>WELCOME TO MY PORTFOLIO</h1>
-              <div className='flex-basis'></div>
-              <h3 style={slide} className='scroll-message'>[Scroll down to learn about me!]</h3>
-            </div>
+            <Header />
           </ParallaxLayer>
           <ParallaxLayer speed={2.5} factor={1}>
             <Main />

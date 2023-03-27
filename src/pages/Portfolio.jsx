@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react'
+import Header from '../components/Header'
 import ParallaxContent from '../components/ParallaxContent'
+
 
 const Portfolio = () => {
 
@@ -19,16 +21,20 @@ const Portfolio = () => {
 
   return (
     <div className='full-container'>
-      <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }}>
         {!isMobile ? (
-          <ParallaxContent />
+          <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }}>
+            <ParallaxContent />
+          </div>
         ) : (
           <div className='mobile-container'>
+            <div className='mobile-header'>
+              <Header />
+            </div>
             <img src="../images/full.png" alt="" />
           </div>
         )
       }
-      </div>
+      
     </div>
   )
 }
