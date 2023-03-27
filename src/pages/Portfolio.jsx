@@ -10,16 +10,10 @@ const Portfolio = () => {
 
   
   useEffect(() => {
-    const checkIsMobile = () => {
-      setIsMobile(window.innerWidth < 768)
-    }
-    checkIsMobile()
-    window.addEventListener('resize', checkIsMobile)
-    return () => {
-      window.removeEventListener('resize', checkIsMobile)
-    }
-  }, [])
-
+    const userAgent = window.navigator.userAgent;
+    setIsMobile(/Mobi/.test(userAgent));
+  }, []);
+  
   return (
     <div className='full-container'>
         {!isMobile ? (
