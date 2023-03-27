@@ -23,7 +23,9 @@ const Portfolio = () => {
         {!isMobile ? (
           <ParallaxContent />
         ) : (
-          <div>Mobile</div>
+          <div className='mobile-container'>
+            <img src="../images/full.png" alt="" />
+          </div>
         )
       }
       </div>
