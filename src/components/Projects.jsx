@@ -16,8 +16,8 @@ const Projects = () => {
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
                 </div>
                 <div className="project-links">
-                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank'>Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank'>Repo Link</a>
+                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer">Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer">Repo Link</a>
                 </div>
             </div>
             <div className="project">
@@ -34,8 +34,8 @@ const Projects = () => {
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
                 </div>
                 <div className="project-links">
-                    <a href="https://marvelous.herokuapp.com/" target='_blank'>Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank'>Repo Link</a>
+                    <a href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer">Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank' rel="noreferrer">Repo Link</a>
                 </div>
             </div>
         </div>

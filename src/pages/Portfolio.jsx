@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import Header from '../components/Header'
 import Main from '../components/Main'
 import ParallaxContent from '../components/ParallaxContent'
+import BackToTop from '../components/BackToTop'
 
 
 const Portfolio = () => {
@@ -19,6 +20,7 @@ const Portfolio = () => {
         {!isMobile ? (
           <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }} >
             <ParallaxContent />
+            <BackToTop />
           </div>
         ) : (
           <div className='mobile-container'>
