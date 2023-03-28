@@ -7,14 +7,14 @@ import Main from './Main'
 const ParallaxContent = () => {
 
   return (
-    <Parallax pages={1.5} className='parallax'>
+    <Parallax pages={1.55} className='parallax'>
           <ParallaxLayer speed={0} factor={5}>
             <img src="../images/6th.png" alt='' className='background'/>
           </ParallaxLayer>
           <ParallaxLayer speed={-0.2} factor={1}>
             <img src="../images/Sun.png" alt=''  />
           </ParallaxLayer>
-          <ParallaxLayer speed={0} factor={1}>
+          <ParallaxLayer speed={0.2} factor={1}>
             <img src="../images/5th.png" alt=''  />
           </ParallaxLayer>
           <ParallaxLayer speed={0.5} factor={1}>

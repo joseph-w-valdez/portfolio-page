@@ -153,6 +153,21 @@ main>p {
   top: -0.7rem;
 }
 
+.section {
+  margin-bottom: 70px;
+}
+
+.new-line {
+  height: 10px;
+  width: 100vw;
+  color: white;
+  margin-left: -50px;
+}
+
+.about-me p {
+  width: 85%;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -178,6 +193,15 @@ main>p {
 
 .project-logo-frame img {
   object-fit: contain;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-logo-frame {
+  width:20%;
 }
 
 @media only screen and (max-width:2000px) {

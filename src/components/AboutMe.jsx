@@ -11,7 +11,7 @@ const AboutMe = () => {
     
     
   return (
-    <div>
+    <div className='about-me section'>
         <h1 style={fade} className='name-header'>Hello! My name is Joseph!</h1>
         <p>
           I am a software engineer in Southern California. I'd love to contribute to any projects and applications that have a positive impact on the community.
