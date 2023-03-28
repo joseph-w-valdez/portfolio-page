@@ -7,7 +7,7 @@ import Main from './Main'
 const ParallaxContent = () => {
 
   return (
-    <Parallax pages={1.35} className='parallax'>
+    <Parallax pages={1.5} className='parallax'>
           <ParallaxLayer speed={0} factor={5}>
             <img src="../images/6th.png" alt='' className='background'/>
           </ParallaxLayer>

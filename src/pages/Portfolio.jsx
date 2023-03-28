@@ -15,9 +15,9 @@ const Portfolio = () => {
   }, []);
   
   return (
-    <div className='full-container'>
+    <div className='full-container' >
         {!isMobile ? (
-          <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }}>
+          <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }} >
             <ParallaxContent />
           </div>
         ) : (
