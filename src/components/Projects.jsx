@@ -15,6 +15,10 @@ const Projects = () => {
                 <div className="project-logo-frame">
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
                 </div>
+                <div className="project-links">
+                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank'>Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank'>Repo Link</a>
+                </div>
             </div>
             <div className="project">
                 <h3 className='project-title'>Marvelous</h3>
@@ -28,6 +32,10 @@ const Projects = () => {
                 </p>
                 <div className="project-logo-frame">
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
+                </div>
+                <div className="project-links">
+                    <a href="https://marvelous.herokuapp.com/" target='_blank'>Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank'>Repo Link</a>
                 </div>
             </div>
         </div>
