@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const BackToTop = () => {
+const BackToTop = ({ scrollToTop }) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -19,15 +19,8 @@ const BackToTop = () => {
     };
   }, []);
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
-
   return (
-    <div className={`back-to-top ${isVisible ? 'visible' : ''}`}>
+    <div className={`back-to-top`} >
       <button id="back-to-top-btn" onClick={scrollToTop}>
         ↑
       </button>

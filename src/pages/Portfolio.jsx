@@ -20,7 +20,6 @@ const Portfolio = () => {
         {!isMobile ? (
           <div className='parallax-container' style={{ backgroundColor: '#0d0d0d' }} >
             <ParallaxContent />
-            <BackToTop />
           </div>
         ) : (
           <div className='mobile-container'>
