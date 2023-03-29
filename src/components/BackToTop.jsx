@@ -1,23 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 const BackToTop = ({ scrollToTop }) => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    const toggleVisibility = () => {
-      if (window.pageYOffset > 200) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
-    };
-
-    window.addEventListener('scroll', toggleVisibility);
-
-    return () => {
-      window.removeEventListener('scroll', toggleVisibility);
-    };
-  }, []);
 
   return (
     <div className={`back-to-top`} >

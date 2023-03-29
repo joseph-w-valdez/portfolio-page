@@ -200,15 +200,15 @@ main>p {
   width: 100%;
 }
 
-.project-links a {
+a {
   margin-right: 5rem;
   color: white;
   transition: transform 0.3s ease-in-out;
   font-size: 1.1rem;
 }
 
-.project-links a:hover{
-  font-size: 1.3rem;
+a:hover{
+  font-size: 1.2rem;
   color: rgb(235, 223, 67);
 }
 
@@ -252,6 +252,16 @@ main>p {
   .content-container {
     margin-top: 16rem;
   }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social-logo-frame {
+  width: 60px;
+  margin-right: 20px;
 }
 
 @media only screen and (max-width:768px) {

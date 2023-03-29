@@ -3,6 +3,7 @@ import NewLine from './NewLine'
 import AboutMe from './AboutMe'
 import Projects from './Projects'
 import Skills from './Skills'
+import ContactMe from './ContactMe'
 
 const Main = () => {
 
@@ -14,6 +15,7 @@ const Main = () => {
       <NewLine />
       <Skills />
       <Projects />
+      <ContactMe />
       </div>
     </main>
   )
