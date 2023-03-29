@@ -54,6 +54,31 @@ const Skills = () => {
                     <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/tailwindcss/tailwindcss-plain.svg" alt="Tailwind" />
                 </div>
             </div>
+            <div className="flex-basis"></div>
+            <div className="skill">
+                <h3>Webpack</h3>
+                <div className="skill-logo-frame">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/webpack/webpack-original.svg" alt="Webpack" />
+                </div>
+            </div>
+            <div className="skill">
+                <h3>Photoshop</h3>
+                <div className="skill-logo-frame">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/photoshop/photoshop-plain.svg" alt="Photoshop" />
+                </div>
+            </div>
+            <div className="skill">
+                <h3>Heroku</h3>
+                <div className="skill-logo-frame">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/heroku/heroku-original-wordmark.svg" alt="Heroku" />
+                </div>
+            </div>
+            <div className="skill">
+                <h3>Git</h3>
+                <div className="skill-logo-frame">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-plain-wordmark.svg" alt="Git" />
+                </div>
+            </div>
         </div>
     </div>
   )
