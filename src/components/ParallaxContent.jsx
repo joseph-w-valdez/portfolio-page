@@ -35,7 +35,7 @@ const ParallaxContent = () => {
         <ParallaxLayer speed={1.1} factor={1}>
           <img src="../images/2nd.png" alt=''  />
         </ParallaxLayer>
-        <ParallaxLayer speed={1.75} factor={1}>
+        <ParallaxLayer speed={1.5} factor={1}>
           <img src="../images/Bottom.png" alt='' className='bottom'/>
         </ParallaxLayer>
         <ParallaxLayer speed={-0.3} factor={1}>
