@@ -7,11 +7,14 @@ const Projects = () => {
         <div className="projects">
             <div className='project'>
                 <h2 className='project-title'>Valorant Checker</h2>
-                <p className='project-description'>
-                A dynamic application that uses the Valorant API to display information about playable characters and weapons. Organized using HTML5 with modular view 
-                swapping for seamless user experience with dynamic responsiveness for multiple viewports. Features a custom filter table with CSS3 and JavaScript, 
-                mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests to populate the page with corresponding data based on user-selected filters. 
-                </p>
+                <div className='project-description'>
+                    <p>
+                    • The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.
+                    </p>
+                    <p>
+                    • The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.
+                    </p>
+                </div>
                 <div className="project-logo-frame">
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
                 </div>
@@ -22,14 +25,20 @@ const Projects = () => {
             </div>
             <div className="project">
                 <h2 className='project-title'>Marvelous</h2>
-                <p className='project-description'>
-                A dynamic full-stack web application utilizing JavaScript, Node.js, and React with the official Marvel Comics API. MD5 hashing was utilized to access the Marvel API, and 
-                the frontend was built with React, React Router, and React Hook Form with styling by Tailwind CSS. Features user authentication and authorization functionality powered 
-                by JSON Web Tokens and Argon2 password hashing, and a RESTful API that includes endpoints for CRUD operations on characters and search functionality. The backend was 
-                built using Express and pg as the PostgreSQL client library. Axios was used for HTTP requests, and Multer was used for file uploads. The server was configured with 
-                Webpack, Babel, and nodemon and deployed to Heroku. Independent research was conducted to learn and implement all the technologies listed, showcasing strong 
-                self-learning and adaptability skills.
-                </p>
+                <div className='project-description'>
+                    <p>
+                    • A dynamic full-stack web application was built using JavaScript, Node.js, and React, which utilized the official Marvel Comics API. MD5 hashing was employed to access the Marvel API, and the frontend was built with React, React Router, and React Hook Form. The frontend was styled with Tailwind CSS.
+                    </p>
+                    <p>
+                    • The application features user authentication and authorization functionality powered by JSON Web Tokens and Argon2 password hashing. A RESTful API is included with endpoints for CRUD operations on characters and search functionality.
+                    </p>
+                    <p>
+                    • The backend was built using Express and pg as the PostgreSQL client library. Axios was used for HTTP requests, and Multer was used for file uploads. The server was configured with Webpack, Babel, and nodemon and deployed to Heroku.
+                    </p>
+                    <p>
+                    • Independent research was conducted to learn and implement all the technologies listed, showcasing strong self-learning and adaptability skills.
+                    </p>
+                </div>
                 <div className="project-logo-frame">
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
                 </div>
