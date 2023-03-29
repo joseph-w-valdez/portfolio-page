@@ -204,16 +204,21 @@ main>p {
   width: 100%;
 }
 
-a {
+:not(.skills) > a {
   margin-right: 5rem;
   color: white;
   transition: transform 0.3s ease-in-out;
   font-size: 1.1rem;
 }
 
-a:hover{
+:not(.skills) > a:hover {
   font-size: 1.2rem;
   color: rgb(235, 223, 67);
+}
+
+.skills > a { 
+  color: white;
+  text-decoration: none;
 }
 
 .skills-section {
