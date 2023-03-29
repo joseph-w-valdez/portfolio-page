@@ -156,6 +156,18 @@ main>p {
 
 .section {
   margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.section:not(:first-child)  h1 {
+  background-color: white;
+  padding: 4px 10px;
+  border-radius: 10px;
+  text-align: start;
+  color: #457ac9;
+  text-shadow: none;
 }
 
 .new-line {
@@ -216,19 +228,14 @@ main>p {
   color: rgb(235, 223, 67);
 }
 
-.skills > a { 
-  color: white;
-  text-decoration: none;
-}
-
-.skills-section {
+.skills-container {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
-.skills-section h1 {
-  width: 100%;
+.skills > a { 
+  color: white;
+  text-decoration: none;
 }
 
 .skills {

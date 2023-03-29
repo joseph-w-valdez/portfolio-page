@@ -4,6 +4,7 @@ const ContactMe = () => {
   return (
     <div className="section">
         <h1>Contact Me</h1>
+        <div className="flex-basis"></div>
         <div className="socials">
             <div className="social">
                 <div className="social-logo-frame">
