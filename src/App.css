@@ -178,6 +178,7 @@ main>p {
 .project {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-bottom: 50px;
   width: 75%;
 }
@@ -244,6 +245,7 @@ a:hover{
   margin: 20px;
   padding: 10px;
   cursor: pointer;
+  transition: background-color 0.4s;
 }
 
 .skill:hover {
