@@ -6,7 +6,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projects">
             <div className='project'>
-                <h3 className='project-title'>Valorant Checker</h3>
+                <h2 className='project-title'>Valorant Checker</h2>
                 <p className='project-description'>
                 A dynamic application that uses the Valorant API to display information about playable characters and weapons. Organized using HTML5 with modular view 
                 swapping for seamless user experience with dynamic responsiveness for multiple viewports. Features a custom filter table with CSS3 and JavaScript, 
@@ -21,7 +21,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="project">
-                <h3 className='project-title'>Marvelous</h3>
+                <h2 className='project-title'>Marvelous</h2>
                 <p className='project-description'>
                 A dynamic full-stack web application utilizing JavaScript, Node.js, and React with the official Marvel Comics API. MD5 hashing was utilized to access the Marvel API, and 
                 the frontend was built with React, React Router, and React Hook Form with styling by Tailwind CSS. Features user authentication and authorization functionality powered 
