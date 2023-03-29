@@ -218,12 +218,36 @@ a:hover{
   flex-wrap: wrap;
 }
 
+.skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 175px;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.skill:hover {
+  background-color: #1c3255;
+}
+
+.skill>h3 {
+  width: 100%;
+  position: relative;
+  bottom: 7px;
+}
+
 .skill-frame {
   border: 2px solid gray;
+  width: 100%;
 }
 
 .skill-logo-frame {
-  width:20%;
+  width:40%;
 }
 
 .back-to-top {
