@@ -14,7 +14,9 @@ const Main = () => {
       <AboutMe />
       <NewLine />
       <Skills />
+      <NewLine />
       <Projects />
+      <NewLine />
       <ContactMe />
       </div>
     </main>
