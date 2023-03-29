@@ -83,7 +83,7 @@ img {
 }
 
 .full-container{
-  width: 100%;
+  width: 100vw;
 }
 
 .parallax-container {
