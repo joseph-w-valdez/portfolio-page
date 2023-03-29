@@ -6,7 +6,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projects">
             <div className='project'>
-                <h3 className='project-title'>ValoFuze</h3>
+                <h3 className='project-title'>Valorant Checker</h3>
                 <p className='project-description'>
                 A dynamic application that uses the Valorant API to display information about playable characters and weapons. Organized using HTML5 with modular view 
                 swapping for seamless user experience with dynamic responsiveness for multiple viewports. Features a custom filter table with CSS3 and JavaScript, 
