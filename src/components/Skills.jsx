@@ -6,9 +6,11 @@ const Skills = () => {
         <h1>Skills</h1>
         <div className="skills">
             <div className="skill">
-                <h3>HTML5</h3>
-                <div className="skill-logo-frame">
-                    <img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" alt="HTML5" />
+                <div className="skill-frame">
+                    <h3>HTML5</h3>
+                    <div className="skill-logo-frame">
+                        <img src="https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg" alt="HTML5" />
+                    </div>
                 </div>
             </div>
             <div className="skill">

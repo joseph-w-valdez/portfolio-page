@@ -3,13 +3,15 @@ import React from 'react';
 const BackToTop = ({ scrollToTop }) => {
 
   return (
-    <div className={`back-to-top`} onClick={scrollToTop}>
-      <button id="back-to-top-btn" >
-        ↑
-      </button>
-      <div className='flex-basis'></div>
-      <p>Back to top</p>
-    </div>
+    <nav className={`back-to-top`} onClick={scrollToTop}>
+      <span role="button" aria-label="Back to Top" tabindex="0">
+        <button id="back-to-top-btn">
+          ↑
+        </button>
+        <div className='flex-basis'></div>
+        <p>Back to top</p>
+      </span>
+    </nav>
   );
 };
 
