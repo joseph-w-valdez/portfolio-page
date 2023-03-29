@@ -54,14 +54,11 @@ const skillsData = [
 
 const Skills = () => {
   return (
-    <div className='section'>
+    <div className='section skills-section'>
       <h1>Skills</h1>
       <div className="skills">
-      {skillsData.map((skill, index) => (
-          <React.Fragment key={skill.title}>
-            <Skill title={skill.title} logo={skill.logo} />
-            {(index + 1) % 6 === 0 && <div className="flex-basis"></div>}
-          </React.Fragment>
+        {skillsData.map((skill) => (
+          <Skill key={skill.title} title={skill.title} logo={skill.logo} />
         ))}
       </div>
     </div>

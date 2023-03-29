@@ -213,10 +213,23 @@ a:hover{
   color: rgb(235, 223, 67);
 }
 
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-section h1 {
+  width: 100%;
+}
+
 .skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  max-width: 60%;
 }
+
 
 .skill {
   display: flex;
@@ -238,7 +251,7 @@ a:hover{
 .skill>h3 {
   width: 100%;
   position: relative;
-  bottom: 7px;
+  bottom: 10px;
 }
 
 .skill-frame {
@@ -248,6 +261,8 @@ a:hover{
 
 .skill-logo-frame {
   width:40%;
+  position: relative;
+  bottom: 10px;
 }
 
 .back-to-top {
