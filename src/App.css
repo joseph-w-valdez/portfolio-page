@@ -224,7 +224,6 @@ main>p {
 }
 
 :not(.skills) > a:hover {
-  font-size: 1.2rem;
   color: rgb(235, 223, 67);
 }
 
