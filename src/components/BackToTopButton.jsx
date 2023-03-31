@@ -1,7 +1,7 @@
 import React from 'react';
 
-const BackToTop = ({ scrollToTop }) => {
-
+const BackToTop = ({ scrollToTop, isMobile }) => {
+  console.log(isMobile)
   return (
     <nav className={`back-to-top`} onClick={scrollToTop}>
       <span role="button" aria-label="Back to Top" tabindex="0">
@@ -9,7 +9,7 @@ const BackToTop = ({ scrollToTop }) => {
           ↑
         </button>
         <div className='flex-basis'></div>
-        <p>Back to top</p>
+        {!isMobile && isMobile === undefined && <p>Back to top</p>}
       </span>
     </nav>
   );

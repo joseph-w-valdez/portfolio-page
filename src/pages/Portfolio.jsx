@@ -15,11 +15,8 @@ const Portfolio = () => {
     const checkIsMobile = () => {
       setIsMobile(/Mobi/.test(userAgent) || window.innerWidth < 600);
     };
-    // Run once on component mount
     checkIsMobile();
-    // Add event listener for window resizing
     window.addEventListener('resize', checkIsMobile);
-    // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', checkIsMobile);
     };
@@ -30,6 +27,7 @@ const Portfolio = () => {
     setShowBackToTop(scrollTop > 0);
   };
 
+  //check for non-parallax window scrolling
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -54,7 +52,7 @@ const Portfolio = () => {
           </div>
           <img src='../images/full.png' alt='' />
           <Main />
-          {showBackToTop && <BackToTop scrollToTop={scrollToTop} />}
+          {showBackToTop && <BackToTop scrollToTop={scrollToTop} isMobile={isMobile} />}
         </div>
       )}
     </div>
