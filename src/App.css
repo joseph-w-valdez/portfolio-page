@@ -220,6 +220,12 @@ main>p {
 
 .project-links {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-link {
+  margin: 5px;
 }
 
 a.social-link, a.project-link {
@@ -320,6 +326,7 @@ a.social-link, a.project-link {
 .social {
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .social-logo-frame {
@@ -360,6 +367,8 @@ form input, form textarea {
 
 form textarea {
   height: 150px;
+  min-height: 150px;
+  resize: vertical;
 }
 
 form input::placeholder, form textarea::placeholder {
@@ -419,33 +428,28 @@ form button:hover {
   main {
     justify-content: center;
   }
-
   .content-container {
     width:90%
   }
-
+  .skills {
+    max-width: 100%;
+  }
   .skill {
-    width: 40%;
+    width: 120px;
     margin: 11px;
   }
-
   .skill-logo-frame {
     width: 50%;
   }
-
   .project-logo-frame {
     width: 30%;
   }
-
   .social-logo-frame {
     width: 60px;
-    
   }
-
   .social a {
     font-size: 0.75rem;
   }
-
   .header {
     margin-top: 20px
   }
