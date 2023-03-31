@@ -13,7 +13,6 @@ const ParallaxContent = () => {
   const handleScroll = () => {
     if (parallaxRef.current) {
       const currentScroll = parallaxRef.current.current;
-      console.log(currentScroll);
       setShowBackToTop(currentScroll > 0);
     }
   };

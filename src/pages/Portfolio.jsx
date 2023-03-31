@@ -7,6 +7,7 @@ import { nonParallaxScrollToTop as scrollToTop} from '../utilities/scrollToTop';
 
 const Portfolio = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   //check if the device is mobile or <= 600px width
   useEffect(() => {
@@ -21,6 +22,18 @@ const Portfolio = () => {
     // Clean up event listener on component unmount
     return () => {
       window.removeEventListener('resize', checkIsMobile);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    setShowBackToTop(scrollTop > 0);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
@@ -41,7 +54,7 @@ const Portfolio = () => {
           </div>
           <img src='../images/full.png' alt='' />
           <Main />
-          <BackToTop scrollToTop={scrollToTop}/>
+          {showBackToTop && <BackToTop scrollToTop={scrollToTop} />}
         </div>
       )}
     </div>
