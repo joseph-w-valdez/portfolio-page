@@ -3,16 +3,15 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import Header from './Header'
 import Main from './Main'
-import BackToTop from './BackToTop'
+import BackToTop from './BackToTopButton'
+import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop'
+
 
 const ParallaxContent = () => {
 
   const parallaxRef = useRef();
 
-  const scrollToTop = () => {
-    parallaxRef.current.scrollTo(0);
-  };
-
+  
 
   return (
     <div>
@@ -45,7 +44,7 @@ const ParallaxContent = () => {
           <Main />
         </ParallaxLayer>
       </Parallax>
-      <BackToTop scrollToTop={scrollToTop} />
+      <BackToTop scrollToTop={() => scrollToTop(parallaxRef)} />
     </div>
   )
 }
