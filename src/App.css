@@ -245,7 +245,7 @@ a.social-link, a.project-link {
   justify-content: center;
 }
 
-.skills > a { 
+a.skill { 
   color: white;
   text-decoration: none;
 }
