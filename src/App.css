@@ -150,6 +150,7 @@ main>p {
 }
 
 .mobile-header {
+  width: 100%;
   position: absolute;
   top: -0.7rem;
 }
