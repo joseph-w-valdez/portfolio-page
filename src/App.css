@@ -222,7 +222,7 @@ main>p {
   width: 100%;
 }
 
-:not(.skills) > a {
+a.social-link, a.project-link {
   margin-right: 5rem;
   color: white;
   transition: transform 0.3s ease-in-out;
@@ -317,12 +317,45 @@ main>p {
  transform: scale(1.1);
 }
 
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social-logo-frame {
+  width: 60px;
+  margin-right: 20px;
+  display: inline-block;
+  transition: 0.2s ease;
+}
+
+.project-logo-frame {
+  transition: 0.2s ease;
+}
+
+.social-logo-frame:hover, .project-logo-frame:hover {
+  transform: scale(1.07);
+}
+
+.contact-me-section a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
 form input, form textarea {
   width: 400px;
   height: 40px;
   margin: 10px 0;
   border-radius: 5px;
-  padding: 10px
+  padding: 10px;
+  font-size: 1rem;
 }
 
 form textarea {
@@ -345,23 +378,13 @@ form button {
   border-radius: 10px;
 }
 
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+form button:hover {
+  font-size: 1.1rem;
 }
 
 @media only screen and (max-width:2000px) {
   .content-container {
     margin-top: 16rem;
-  }
-  .social {
-    display: flex;
-    align-items: center;
-  }
-  .social-logo-frame {
-    width: 60px;
-    margin-right: 20px;
   }
 }
 
@@ -415,11 +438,12 @@ form {
   }
 
   .social-logo-frame {
-    width: 50%;
+    width: 60px;
+    
   }
 
   .social a {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   .header {
@@ -434,6 +458,10 @@ form {
 }
 
 @media only screen and (max-width:480px) {
+  form input, form textarea {
+    width: 90%;
+  }
+
   .header {
     margin-top: 35px
   }

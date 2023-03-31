@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className='section'>
+    <div className='section projects-section'>
         <h1>Projects</h1>
         <div className="projects">
             <div className='project'>
@@ -15,12 +15,12 @@ const Projects = () => {
                     • The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.
                     </p>
                 </div>
-                <div className="project-logo-frame">
+                <a className="project-logo-frame" href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" >
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
-                </div>
+                </a>
                 <div className="project-links">
-                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer">Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer">Repo Link</a>
+                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
                 </div>
             </div>
             <div className="project">
@@ -39,12 +39,12 @@ const Projects = () => {
                     • Independent research was conducted to learn and implement all the technologies listed, showcasing strong self-learning and adaptability skills.
                     </p>
                 </div>
-                <div className="project-logo-frame">
+                <a className="project-logo-frame" href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer" >
                     <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
-                </div>
+                </a>
                 <div className="project-links">
-                    <a href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer">Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank' rel="noreferrer">Repo Link</a>
+                    <a href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
+                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
                 </div>
             </div>
         </div>
