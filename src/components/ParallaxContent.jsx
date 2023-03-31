@@ -1,17 +1,30 @@
-import React, {useRef} from 'react'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+import React, { useRef, useEffect, useState } from 'react';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
-import Header from './Header'
-import Main from './Main'
-import BackToTop from './BackToTopButton'
-import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop'
-
+import Header from './Header';
+import Main from './Main';
+import BackToTop from './BackToTopButton';
+import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop';
 
 const ParallaxContent = () => {
-
   const parallaxRef = useRef();
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
-  
+  const handleScroll = () => {
+    if (parallaxRef.current) {
+      const currentScroll = parallaxRef.current.current;
+      console.log(currentScroll);
+      setShowBackToTop(currentScroll > 0);
+    }
+  };
+
+  useEffect(() => {
+    const container = document.querySelector('.parallax');
+    container.addEventListener('scroll', handleScroll);
+    return () => {
+      container.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <div>
@@ -44,7 +57,7 @@ const ParallaxContent = () => {
           <Main />
         </ParallaxLayer>
       </Parallax>
-      <BackToTop scrollToTop={() => scrollToTop(parallaxRef)} />
+      {showBackToTop && <BackToTop scrollToTop={() => scrollToTop(parallaxRef)} />}
     </div>
   )
 }
