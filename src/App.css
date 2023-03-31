@@ -45,10 +45,7 @@ body {
   background-color: #020A17;
   font-family: 'Poppins', sans-serif;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 0 rgb(105, 105, 105), 
-               -1px -1px 0 rgb(105, 105, 105), 
-               1px -1px 0 rgb(105, 105, 105),  
-               -1px 1px 0 rgb(105, 105, 105)
+
 }
 
 body::-webkit-scrollbar {
@@ -105,6 +102,10 @@ img {
   justify-content: center;
   margin-top:5px;
   width: 100%;
+  text-shadow: 1px 1px 0 rgb(105, 105, 105), 
+  -1px -1px 0 rgb(105, 105, 105), 
+  1px -1px 0 rgb(105, 105, 105),  
+  -1px 1px 0 rgb(105, 105, 105)
 }
 
 .flex-basis {
