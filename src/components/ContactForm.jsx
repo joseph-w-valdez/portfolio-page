@@ -6,7 +6,8 @@ const ContactForm = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = async (data) => {
     const result = await formSubmission(data);
-    if (result.success) {
+    console.log('this is the result', typeof result)
+    if (result.status === 201) {
       reset(); // reset the form after successful submission
       alert("Thank you for your message!");
     } else {
