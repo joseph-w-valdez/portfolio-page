@@ -73,6 +73,7 @@ const ContactForm = () => {
               type="checkbox"
               {...register("privacyPolicy", { required: true })}
               id="privacy-policy-checkbox"
+              onFocus={handleFocus}
             />
             <label htmlFor="privacy-policy-checkbox">
               I have read and agree to the <a href="/privacy-policy" className='privacy-policy'>Privacy Policy</a>.
