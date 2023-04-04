@@ -24,6 +24,7 @@ const ContactForm = () => {
           placeholder="Full Name"
           {...register("fullName", { required: true })}
         />
+        <div className="flex-basis"></div>
         <input
           type="email"
           id="email"
@@ -33,16 +34,19 @@ const ContactForm = () => {
             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
           })}
         />
+        <div className="flex-basis"></div>
         <input
           type="text"
           placeholder="Subject"
           {...register("subject", { required: true })}
         />
+        <div className="flex-basis"></div>
         <textarea
           id="message"
           placeholder="Message"
           {...register("message", { required: true })}
         />
+        <div className="flex-basis"></div>
         <button type="submit">Submit</button>
       </form>
     </>
