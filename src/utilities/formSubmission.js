@@ -15,7 +15,7 @@ const formSubmission = async (data) => {
       body: JSON.stringify({
         to: [{ email: email }],
         htmlContent: `<p>Name: ${data.fullName}</p><p>Email: ${data.email}</p><p>Subject: ${data.subject}</p><p>Message: ${data.message}</p>`,
-        subject: "New message from portfolio website",
+        subject: "New message from your portfolio website!",
         sender: { email: email },
       }),
     });
@@ -29,7 +29,7 @@ const formSubmission = async (data) => {
     }
   } catch (error) {
     console.error(error);
-    throw new Error("There was an error sending your message bro.");
+    throw new Error("There was an error with sending your message.");
   }
 };
 

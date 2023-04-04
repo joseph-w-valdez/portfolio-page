@@ -410,6 +410,19 @@ form button:hover {
   background-color: rgb(235, 223, 67);
 }
 
+.success-message, .error-message {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.success-message {
+  color: rgb(29, 175, 29);
+}
+
+.error-message {
+  color: red;
+}
+
 @media only screen and (max-width:2000px) {
   .content-container {
     margin-top: 16rem;
