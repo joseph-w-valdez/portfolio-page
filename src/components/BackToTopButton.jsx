@@ -1,7 +1,6 @@
 import React from 'react';
 
 const BackToTop = ({ scrollToTop, isMobile }) => {
-  console.log(isMobile)
   return (
     <nav className={`back-to-top`} onClick={scrollToTop}>
       <span role="button" aria-label="Back to Top" tabindex="0">
