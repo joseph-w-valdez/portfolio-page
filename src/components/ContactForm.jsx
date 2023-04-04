@@ -1,9 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import formSubmission from '../utilities/formSubmission';
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onBlur' });
+  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onChange' });
   const isAgreeChecked = watch("privacyPolicy");
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -20,6 +20,13 @@ const ContactForm = () => {
     }
   };
 
+  const handleFocus = () => {
+    if (successMessage) {
+      setSuccessMessage(null);
+      setErrorMessage(null)
+    }
+  };
+
   return (
     <>
       <h2>Send me a message!</h2>
@@ -32,6 +39,7 @@ const ContactForm = () => {
           id="full-name"
           placeholder="Full Name"
           {...register("fullName", { required: true })}
+          onFocus={handleFocus}
         />
         <div className="flex-basis"></div>
         <input
@@ -42,18 +50,21 @@ const ContactForm = () => {
             required: true,
             pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
           })}
+          onFocus={handleFocus}
         />
         <div className="flex-basis"></div>
         <input
           type="text"
           placeholder="Subject"
           {...register("subject", { required: true })}
+          onFocus={handleFocus}
         />
         <div className="flex-basis"></div>
         <textarea
           id="message"
           placeholder="Message"
           {...register("message", { required: true })}
+          onFocus={handleFocus}
         />
         <div className="flex-basis"></div>
         <div className="privacy-container">
