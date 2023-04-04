@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import formSubmission from '../utilities/formSubmission';
+import PrivacyPolicy from './PrivacyPolicy';
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onChange' });
+  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+
+  const handlePrivacyPolicyClick = () => {
+    setShowPrivacyPolicy(true);
+  }
+
+  const handlePrivacyPolicyClose = () => {
+    setShowPrivacyPolicy(false);
+  }
+
+  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onBlur' });
   const isAgreeChecked = watch("privacyPolicy");
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
@@ -73,11 +84,11 @@ const ContactForm = () => {
               type="checkbox"
               {...register("privacyPolicy", { required: true })}
               id="privacy-policy-checkbox"
-              onFocus={handleFocus}
             />
             <label htmlFor="privacy-policy-checkbox">
-              I have read and agree to the <a href="/privacy-policy" className='privacy-policy'>Privacy Policy</a>.
+              I have read and agree to the 
             </label>
+            <span onClick={handlePrivacyPolicyClick} className='privacy-policy'>&nbsp;Privacy Policy</span>.
           </div>
           {errors.privacyPolicy && (
             <>
@@ -89,6 +100,7 @@ const ContactForm = () => {
         <div className="flex-basis"></div>
         <button type="submit" disabled={!isAgreeChecked}>Submit</button>
       </form>
+      {showPrivacyPolicy && <PrivacyPolicy showModal={showPrivacyPolicy} handleClose={handlePrivacyPolicyClose} />}
     </>
   );
 };

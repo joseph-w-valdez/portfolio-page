@@ -1,9 +1,9 @@
 import React from 'react'
 
-const PrivacyPolicy = () => {
+const PrivacyPolicy = ({handleClose}) => {
   return (
-    <div>
-      <h1>Privacy Policy Statement</h1>
+    <div className='privacy-policy-statement'>
+      <h2>Privacy Policy Statement</h2>
       <p>I take the privacy and security of your personal information seriously. This privacy policy statement explains how I collect, use, and protect the personal data of my website's users.</p>
       
       <h2>Data Collection and Use</h2>
@@ -28,7 +28,8 @@ const PrivacyPolicy = () => {
       <h2>Contact Us</h2>
       <p>If you have any questions or concerns about this privacy policy statement or our data protection practices, please send me a message with the contact form or message me on the linked social pages.</p>
       
-      <p>Effective Date: 4-4-2023</p>
+      <p>Effective Date: April-4-2023</p>
+      <button onClick={handleClose}>Close</button>
     </div>
   )
 }
