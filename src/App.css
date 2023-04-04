@@ -423,6 +423,24 @@ form button:hover {
   color: red;
 }
 
+.privacy-container input {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.privacy-agreement {
+  display: flex;
+  align-items: center;
+}
+
+a.privacy-policy {
+  color:rgb(0, 174, 255);
+}
+
+.privacy-container .error-message {
+  text-align: center;
+}
+
 @media only screen and (max-width:2000px) {
   .content-container {
     margin-top: 16rem;

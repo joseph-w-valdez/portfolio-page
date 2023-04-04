@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import { useForm } from 'react-hook-form';
 import formSubmission from '../utilities/formSubmission';
 
 const ContactForm = () => {
-  const { register, handleSubmit, reset } = useForm();
+  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onBlur' });
+  const isAgreeChecked = watch("privacyPolicy");
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
@@ -55,7 +56,26 @@ const ContactForm = () => {
           {...register("message", { required: true })}
         />
         <div className="flex-basis"></div>
-        <button type="submit">Submit</button>
+        <div className="privacy-container">
+          <div className="privacy-agreement">
+            <input
+              type="checkbox"
+              {...register("privacyPolicy", { required: true })}
+              id="privacy-policy-checkbox"
+            />
+            <label htmlFor="privacy-policy-checkbox">
+              I have read and agree to the <a href="/privacy-policy" className='privacy-policy'>Privacy Policy</a>.
+            </label>
+          </div>
+          {errors.privacyPolicy && (
+            <>
+              <div className="flex-basis"></div>
+              <p className="error-message">Please agree to the privacy policy.</p>
+            </>
+          )}
+        </div>
+        <div className="flex-basis"></div>
+        <button type="submit" disabled={!isAgreeChecked}>Submit</button>
       </form>
     </>
   );
