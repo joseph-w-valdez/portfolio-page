@@ -27,7 +27,7 @@ const ParallaxContent = () => {
 
   return (
     <div>
-      <Parallax ref={parallaxRef} pages={6} className='parallax'>
+      <Parallax ref={parallaxRef} pages={3.2} className='parallax'>
         <ParallaxLayer speed={0} factor={5}>
           <img src="../images/6th.png" alt='' className='background'/>
         </ParallaxLayer>
@@ -52,7 +52,7 @@ const ParallaxContent = () => {
         <ParallaxLayer speed={-0.3} factor={1}>
           <Header />
         </ParallaxLayer>
-        <ParallaxLayer speed={0.5} factor={1}>
+        <ParallaxLayer speed={0.7} factor={1}>
           <Main />
         </ParallaxLayer>
       </Parallax>

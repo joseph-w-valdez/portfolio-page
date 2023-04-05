@@ -93,7 +93,7 @@ const ContactForm = () => {
           {errors.privacyPolicy && (
             <>
               <div className="flex-basis"></div>
-              <p className="error-message">Please agree to the privacy policy.</p>
+              <p className="error-message">Please agree to send a message.</p>
             </>
           )}
         </div>
