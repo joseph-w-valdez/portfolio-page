@@ -1,11 +1,20 @@
 import './App.css';
-import Portfolio from './pages/Portfolio'
+import { PrivacyPolicyProvider, PrivacyPolicyContext } from './contexts/PrivacyPolicyContext';
+import Portfolio from './pages/Portfolio';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 function App() {
   return (
-    <div className='page'>
-      <Portfolio />
-    </div>
+    <PrivacyPolicyProvider>
+      <PrivacyPolicyContext.Consumer>
+        {({ showPrivacyPolicy, handlePrivacyPolicyClose }) => (
+          <>
+            <Portfolio />
+            {showPrivacyPolicy && <PrivacyPolicy showModal={showPrivacyPolicy} handleClose={handlePrivacyPolicyClose} />}
+          </>
+        )}
+      </PrivacyPolicyContext.Consumer>
+    </PrivacyPolicyProvider>
   );
 }
 

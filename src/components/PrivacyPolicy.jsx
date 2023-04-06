@@ -1,7 +1,10 @@
-import React from 'react'
-import NewLine from './NewLine'
+import React, { useContext } from 'react';
+import NewLine from './NewLine';
+import { PrivacyPolicyContext } from '../contexts/PrivacyPolicyContext';
 
-const PrivacyPolicy = ({handleClose}) => {
+const PrivacyPolicy = () => {
+  const { handlePrivacyPolicyClose } = useContext(PrivacyPolicyContext);
+
   return (
     <div className='privacy-policy-statement'>
       <h2>Privacy Policy Statement</h2>
@@ -26,9 +29,9 @@ const PrivacyPolicy = ({handleClose}) => {
       <p>If you have any questions or concerns about this privacy policy statement or our data protection practices, please send me a message with the contact form or message me on the linked social pages.</p>
       <NewLine />
       <p>Effective Date: April-4-2023</p>
-      <button onClick={handleClose}>Close</button>
+      <button onClick={handlePrivacyPolicyClose}>Close</button>
     </div>
-  )
-}
+  );
+};
 
-export default PrivacyPolicy
+export default PrivacyPolicy;

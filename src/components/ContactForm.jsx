@@ -1,18 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { useForm } from 'react-hook-form';
 import formSubmission from '../utilities/formSubmission';
-import PrivacyPolicy from './PrivacyPolicy';
+import { PrivacyPolicyContext } from '../contexts/PrivacyPolicyContext';
 
 const ContactForm = () => {
-  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
-
-  const handlePrivacyPolicyClick = () => {
-    setShowPrivacyPolicy(true);
-  }
-
-  const handlePrivacyPolicyClose = () => {
-    setShowPrivacyPolicy(false);
-  }
+  const { handlePrivacyPolicyClick } = useContext(PrivacyPolicyContext);
 
   const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onBlur' });
   const isAgreeChecked = watch("privacyPolicy");
@@ -100,7 +92,6 @@ const ContactForm = () => {
         <div className="flex-basis"></div>
         <button type="submit" disabled={!isAgreeChecked}>Submit</button>
       </form>
-      {showPrivacyPolicy && <PrivacyPolicy showModal={showPrivacyPolicy} handleClose={handlePrivacyPolicyClose} />}
     </>
   );
 };
