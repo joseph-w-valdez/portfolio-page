@@ -445,6 +445,7 @@ span.privacy-policy {
 .privacy-policy-statement {
   position: absolute;
   width: 50%;
+  height: 500px;
   background-color: rgb(81, 120, 192);
   border-radius: 50px;
   padding: 10px 20px;
@@ -452,7 +453,13 @@ span.privacy-policy {
   flex-wrap: wrap;
   justify-content: center;
   overflow-x: hidden;
+  scrollbar-width: none; /* hide scrollbar on non-webkit browsers, like Chrome */
 }
+/* hide scrollbar on webkit browsers, like Chrome */
+.privacy-policy-statement::-webkit-scrollbar {
+  display: none;
+}
+
 .privacy-policy-statement h2 {
   font-size: 1.1rem;
   width: 100%;
