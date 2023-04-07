@@ -6,22 +6,24 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projects">
             <div className='project'>
-                <h2 className='project-title'>Valorant Checker</h2>
-                <div className='project-description'>
-                    <p>
-                    • The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.
-                    </p>
-                    <p>
-                    • The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.
-                    </p>
-                </div>
-                <a className="project-logo-frame" href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" >
-                    <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
+                <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>
+                    <h2 className='project-title'>Valorant Checker</h2>
+                    <div className='project-description'>
+                        <p>
+                        • The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.
+                        </p>
+                        <p>
+                        • The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.
+                        </p>
+                    </div>
+                    <a className="project-logo-frame" href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" >
+                        <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
+                    </a>
+                    <div className="project-links">
+                        <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
+                        <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
+                    </div>
                 </a>
-                <div className="project-links">
-                    <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
-                </div>
             </div>
             <div className="project">
                 <h2 className='project-title'>Marvelous</h2>

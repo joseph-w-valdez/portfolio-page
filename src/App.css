@@ -193,10 +193,21 @@ main>p {
   justify-content: center;
   margin-bottom: 50px;
   width: 75%;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 0 20px 30px;
+  transition: background-color 0.4s;
 }
 
 .project-title {
   width: 100%
+}
+.project:hover {
+  background-color: #1c3255;
+}
+.project:hover .project-title {
+  color:rgb(235, 223, 67);
 }
 
 .project-description{
@@ -206,6 +217,12 @@ main>p {
 .project-logo-frame{
   width: 13%;
   margin-left: 50px;
+  transition: 0.2s ease;
+  display:inline-block;
+}
+
+.project:hover .project-logo-frame {
+  transform: scale(1.07);
 }
 
 .project-logo-frame img {
@@ -216,10 +233,12 @@ main>p {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  text-decoration: underline;
 }
 
 .project-link {
   margin: 5px;
+  
 }
 
 a.social-link, a.project-link {
@@ -335,7 +354,8 @@ a.skill {
   margin-bottom: 15px;
   border: 2px solid white;
   border-radius: 20px;
-  padding: 10px
+  padding: 10px;
+  transition: background-color 0.4s;
 }
 
 .social-logo-frame {
@@ -345,19 +365,11 @@ a.skill {
   transition: 0.2s ease;
 }
 
-.project-logo-frame {
-  transition: 0.2s ease;
-}
-
-.project-logo-frame:hover {
-  transform: scale(1.07);
-}
-
 .social:hover .social-logo-frame {
   transform: scale(1.15);
 }
 
-.contact-me-section a {
+.contact-me-section a, .projects-section a {
   font-size: 1rem;
   text-decoration: none;
 }
@@ -367,7 +379,6 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 form input, form textarea {
   width: 400px;
@@ -509,6 +520,7 @@ span.privacy-policy {
   border-radius: 20px;
   padding: 20px;
   margin: 0 20px 30px;
+  transition: background-color 0.4s;
 }
 .qualifications-section a {
   text-decoration: none;
@@ -519,7 +531,7 @@ span.privacy-policy {
   background-color: #1c3255;
 }
 
-:not(.qualification)> a:hover {
+a.skill:hover, a.project-link:hover {
   color: rgb(235, 223, 67);
 }
 
