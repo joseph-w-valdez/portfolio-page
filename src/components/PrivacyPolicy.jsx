@@ -1,13 +1,20 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import NewLine from './NewLine';
 import { PrivacyPolicyContext } from '../contexts/PrivacyPolicyContext';
 
 const PrivacyPolicy = () => {
   const { handlePrivacyPolicyClose } = useContext(PrivacyPolicyContext);
+  const modalRef = useRef(null);
+
+  const handleClick = (event) => {
+    if (modalRef.current && !modalRef.current.contains(event.target)) {
+      handlePrivacyPolicyClose();
+    }
+  };
 
   return (
-    <div className="privacy-policy-modal">
-      <div className='privacy-policy-statement'>
+    <div className="privacy-policy-modal" onClick={handleClick}>
+      <div className='privacy-policy-statement' ref={modalRef}>
         <h2>Privacy Policy Statement</h2>
         <p>I take the privacy and security of your personal information seriously. This privacy policy statement explains how I collect, use, and protect the personal data of my website's users.</p>
         <NewLine />
