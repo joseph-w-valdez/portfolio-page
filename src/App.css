@@ -517,14 +517,13 @@ span.privacy-policy {
 
 .qualification:hover {
   background-color: #1c3255;
-  cursor: pointer;
 }
 
-:not(.qualifications)>a:hover {
+:not(.qualification)> a:hover {
   color: rgb(235, 223, 67);
 }
 
-a:hover .qualification-title, a:hover .qualification-rolew {
+a:hover .qualification-title, a:hover .qualification-role {
   color: rgb(235, 223, 67);
 }
 
