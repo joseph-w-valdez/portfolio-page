@@ -6,7 +6,7 @@ const Projects = () => {
         <h1>Projects</h1>
         <div className="projects">
             <div className='project'>
-                <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>
+                <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer">
                     <h2 className='project-title'>Valorant Checker</h2>
                     <div className='project-description'>
                         <p>
@@ -16,9 +16,9 @@ const Projects = () => {
                         • The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.
                         </p>
                     </div>
-                    <a className="project-logo-frame" href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" >
+                    <div className="project-logo-frame" href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" >
                         <img src="https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png" alt="" />
-                    </a>
+                    </div>
                     <div className="project-links">
                         <a href="https://joseph-w-valdez.github.io/Valorant-Checker/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
                         <a href="https://github.com/joseph-w-valdez/ajax-project" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
@@ -26,8 +26,9 @@ const Projects = () => {
                 </a>
             </div>
             <div className="project">
-                <h2 className='project-title'>Marvelous</h2>
-                <div className='project-description'>
+                <a href="https://marvelous.herokuapp.com/" target="_blank" rel="noreferrer">
+                    <h2 className="project-title">Marvelous</h2>
+                    <div className="project-description">
                     <p>
                     • A dynamic full-stack web application was built using JavaScript, Node.js, and React, which utilized the official Marvel Comics API. MD5 hashing was employed to access the Marvel API, and the frontend was built with React, React Router, and React Hook Form. The frontend was styled with Tailwind CSS.
                     </p>
@@ -40,14 +41,15 @@ const Projects = () => {
                     <p>
                     • Independent research was conducted to learn and implement all the technologies listed, showcasing strong self-learning and adaptability skills.
                     </p>
-                </div>
-                <a className="project-logo-frame" href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer" >
-                    <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
+                    </div>
+                    <div className="project-logo-frame" href="https://marvelous.herokuapp.com/" target="_blank" rel="noreferrer">
+                        <img src="https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp" alt="" />
+                    </div>
+                    <div className="project-links">
+                        <a href="https://marvelous.herokuapp.com/" target="_blank" rel="noreferrer" className="project-link">Live Link</a>
+                        <a href="https://github.com/joseph-w-valdez/marvelous" target="_blank" rel="noreferrer" className="project-link">Repo Link</a>
+                    </div>
                 </a>
-                <div className="project-links">
-                    <a href="https://marvelous.herokuapp.com/" target='_blank' rel="noreferrer" className='project-link'>Live Link</a>
-                    <a href="https://github.com/joseph-w-valdez/marvelous" target='_blank' rel="noreferrer" className='project-link'>Repo Link</a>
-                </div>
             </div>
         </div>
     </div>

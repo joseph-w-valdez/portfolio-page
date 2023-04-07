@@ -199,7 +199,12 @@ main>p {
   margin: 0 20px 30px;
   transition: background-color 0.4s;
 }
-
+.project-title, .project-description {
+  color:white;
+}
+.project>a {
+  text-decoration: none;
+}
 .project-title {
   width: 100%
 }
@@ -217,7 +222,7 @@ main>p {
 .project-logo-frame{
   width: 13%;
   margin-left: 50px;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   display:inline-block;
 }
 
@@ -369,7 +374,7 @@ a.skill {
   transform: scale(1.15);
 }
 
-.contact-me-section a, .projects-section a {
+.contact-me-section a{
   font-size: 1rem;
   text-decoration: none;
 }
@@ -519,7 +524,7 @@ span.privacy-policy {
   max-width: 80%;
   border-radius: 20px;
   padding: 20px;
-  margin: 0 20px 30px;
+  margin: 30px 20px;
   transition: background-color 0.4s;
 }
 .qualifications-section a {
