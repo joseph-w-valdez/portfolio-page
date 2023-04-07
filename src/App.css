@@ -263,10 +263,15 @@ a.skill {
   transition: background-color 0.4s;
 }
 
-.skill:hover {
+.skill:hover, .social:hover {
   background-color: #1c3255;
 }
-
+.social span {
+  color:white;
+}
+.social:hover span {
+  color:rgb(235, 223, 67)
+}
 .skill>h3 {
   width: 100%;
   position: relative;
@@ -328,6 +333,9 @@ a.skill {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 10px
 }
 
 .social-logo-frame {
@@ -345,7 +353,7 @@ a.skill {
   transform: scale(1.07);
 }
 
-.social-logo-frame:hover {
+.social:hover .social-logo-frame {
   transform: scale(1.15);
 }
 
@@ -494,6 +502,7 @@ span.privacy-policy {
 .contact-form .error-message {
   margin: 0 0 10px;
 }
+
 .qualification {
   border: 2px solid white;
   max-width: 80%;
@@ -515,7 +524,7 @@ span.privacy-policy {
   color: rgb(235, 223, 67);
 }
 
-a:hover .qualification-title, a:hover .qualification-role {
+a:hover .qualification-title, a:hover .qualification-rolew {
   color: rgb(235, 223, 67);
 }
 
