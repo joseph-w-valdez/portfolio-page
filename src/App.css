@@ -188,16 +188,16 @@ main>p {
 }
 
 .project {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 50px;
   width: 75%;
   border: 2px solid white;
   border-radius: 20px;
   padding: 20px;
   margin: 0 20px 30px;
   transition: background-color 0.4s;
+}
+.project>a {
+  display: flex;
+  flex-wrap: wrap;
 }
 .project-title, .project-description {
   color:white;
@@ -214,22 +214,18 @@ main>p {
 .project:hover .project-title {
   color:rgb(235, 223, 67);
 }
-
 .project-description{
   width: 75%;
 }
-
 .project-logo-frame{
   width: 13%;
   margin-left: 50px;
   transition: 0.4s ease;
   display:inline-block;
 }
-
 .project:hover .project-logo-frame {
-  transform: scale(1.07);
+  transform: scale(1.1);
 }
-
 .project-logo-frame img {
   object-fit: contain;
 }
