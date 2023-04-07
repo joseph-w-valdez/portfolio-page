@@ -501,6 +501,16 @@ span.privacy-policy {
   border-radius: 20px;
   padding: 20px;
 }
+.qualifications-section a {
+  text-decoration: none;
+  color: white;
+}
+
+.qualification:hover {
+  background-color: #1c3255;
+  cursor: pointer;
+}
+
 .qualifications-section img {
   width: 100px;
   margin-right: 15px;
