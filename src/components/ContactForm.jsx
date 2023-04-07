@@ -90,7 +90,7 @@ const ContactForm = () => {
           )}
         </div>
         <div className="flex-basis"></div>
-        <button type="submit" disabled={!isAgreeChecked}>Submit</button>
+        <button type="submit" >Submit</button>
       </form>
     </>
   );
