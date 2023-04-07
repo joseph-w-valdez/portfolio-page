@@ -229,9 +229,7 @@ a.social-link, a.project-link {
   font-size: 1.1rem;
 }
 
-:not(.skills) > a:hover {
-  color: rgb(235, 223, 67);
-}
+
 
 .skills-container {
   display: flex;
@@ -498,8 +496,10 @@ span.privacy-policy {
 }
 .qualification {
   border: 2px solid white;
+  max-width: 80%;
   border-radius: 20px;
   padding: 20px;
+  margin: 0 20px 30px;
 }
 .qualifications-section a {
   text-decoration: none;
@@ -509,6 +509,14 @@ span.privacy-policy {
 .qualification:hover {
   background-color: #1c3255;
   cursor: pointer;
+}
+
+:not(.qualifications)>a:hover {
+  color: rgb(235, 223, 67);
+}
+
+a:hover .qualification-title, a:hover .qualification-role {
+  color: rgb(235, 223, 67);
 }
 
 .qualifications-section img {
@@ -521,6 +529,10 @@ span.privacy-policy {
 }
 .qualification-title {
   margin-bottom: 5px;
+}
+.qualification-role {
+  margin:5px 0;
+  font-weight:lighter;
 }
 .qualification-date {
   margin-top: 0px;
@@ -613,7 +625,6 @@ span.privacy-policy {
   form input, form textarea {
     width: 90%;
   }
-
   .header {
     margin-top: 35px
   }
@@ -625,6 +636,9 @@ span.privacy-policy {
   }
   .skill>h3 {
     font-size: 0.8rem;
+  }
+  .qualification-title, .qualification-role {
+    font-size: 0.9rem;
   }
 }
 

@@ -6,8 +6,7 @@ import { PrivacyPolicyContext } from '../contexts/PrivacyPolicyContext';
 const ContactForm = () => {
   const { handlePrivacyPolicyClick } = useContext(PrivacyPolicyContext);
 
-  const { register, handleSubmit, reset, formState: { errors }, watch } = useForm({ mode: 'onBlur' });
-  const isAgreeChecked = watch("privacyPolicy");
+  const { register, handleSubmit, reset, formState: { errors } } = useForm({ mode: 'onBlur' });
   const [successMessage, setSuccessMessage] = useState(null);
   const [errorMessage, setErrorMessage] = useState(null);
 
