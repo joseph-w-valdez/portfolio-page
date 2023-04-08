@@ -661,7 +661,13 @@ a:hover .qualification-title, a:hover .qualification-role {
   .qualification-title, .qualification-role {
     font-size: 0.9rem;
   }
-  span.social-link {
+  .project, .qualification {
+    width: 95%;
+  }
+  .project-description p, 
+  span.social-link, 
+  .qualification p,
+  .about-me p {
     font-size: 0.8rem;
   }
 }
