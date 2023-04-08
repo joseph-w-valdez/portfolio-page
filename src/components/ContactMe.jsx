@@ -23,7 +23,7 @@ const ContactMe = () => {
                 <div className="social-logo-frame">
                   <img src={link.logoUrl} alt={link.linkUrl} />
                 </div>
-                <span className="social-link">{link.linkUrl}</span>
+                <span className="social-link">{link.title}</span>
               </a>
             ))}
           </div>
