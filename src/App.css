@@ -176,9 +176,25 @@ main>p {
   background-color: rgba(255, 255, 255, 0.5);
   margin-left: -50px;
 }
-
+.about-me {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-me h1 {
+  width: 100%;
+}
 .about-me p {
-  width: 85%;
+  width: 100%;
+}
+.about-me-bio {
+  width:77%;
+}
+.about-me .profile-picture-frame {
+  width: 20%;
+}
+.about-me img {
+  width: 100%;
+  border-radius: 50%;
 }
 
 .projects {
@@ -597,6 +613,10 @@ a:hover .qualification-title, a:hover .qualification-role {
   }
   .scroll-message {
     font-size: 1.3rem;
+  }
+  .about-me .profile-picture-frame {
+    width: 50%;
+    margin-top: 10px;
   }
 }
 
