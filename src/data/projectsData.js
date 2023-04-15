@@ -1,15 +1,5 @@
 export const projectsData = [
     {
-      title: 'Valorant Checker',
-      description: [
-        '• The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.',
-        '• The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.'
-      ],
-      liveLink: 'https://joseph-w-valdez.github.io/Valorant-Checker/',
-      repoLink: 'https://github.com/joseph-w-valdez/ajax-project',
-      imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png',
-    },
-    {
       title: 'Marvelous',
       description: [
         '• A dynamic full-stack web application was built using JavaScript, Node.js, and React, which utilized the official Marvel Comics API. MD5 hashing was employed to access the Marvel API, and the frontend was built with React, React Router, and React Hook Form. The frontend was styled with Tailwind CSS.',
@@ -20,5 +10,15 @@ export const projectsData = [
       liveLink: 'https://marvelous.herokuapp.com/',
       repoLink: 'https://github.com/joseph-w-valdez/marvelous',
       imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp',
+    },
+    {
+      title: 'Valorant Checker',
+      description: [
+        '• The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.',
+        '• The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.'
+      ],
+      liveLink: 'https://joseph-w-valdez.github.io/Valorant-Checker/',
+      repoLink: 'https://github.com/joseph-w-valdez/ajax-project',
+      imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png',
     },
   ];
