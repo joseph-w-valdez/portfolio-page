@@ -1,5 +1,30 @@
 export const skillsData = [
     {
+        title: 'Hooks',
+        logo: 'https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg',
+        website: 'https://reactjs.org/docs/hooks-intro.html'
+    },
+    {
+        title: 'ES6',
+        logo: 'https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg',
+        website: 'https://www.ecma-international.org/ecma-262/6.0/'
+    },
+    {
+        title: 'Node.js',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-plain-wordmark.svg',
+        website: 'https://nodejs.org/en/docs'
+    },
+    {
+        title: 'VS Code',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg',
+        website: 'https://code.visualstudio.com/'
+    },
+    {
+        title: 'PostgreSQL',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original-wordmark.svg',
+        website: 'https://www.postgresql.org/'
+    },
+    {
         title: 'HTML5',
         logo: 'https://github.com/devicons/devicon/raw/master/icons/html5/html5-original.svg',
         website: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5'
@@ -8,31 +33,6 @@ export const skillsData = [
         title: 'CSS3',
         logo: 'https://github.com/devicons/devicon/raw/master/icons/css3/css3-plain-wordmark.svg',
         website: 'https://developer.mozilla.org/en-US/docs/Web/CSS'
-    },
-    {
-        title: 'ES6',
-        logo: 'https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg',
-        website: 'https://www.ecma-international.org/ecma-262/6.0/'
-    },
-    {
-        title: 'Hooks',
-        logo: 'https://github.com/devicons/devicon/raw/master/icons/react/react-original-wordmark.svg',
-        website: 'https://reactjs.org/docs/hooks-intro.html'
-    },
-    {
-        title: 'VS Code',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/vscode/vscode-original.svg',
-        website: 'https://code.visualstudio.com/'
-    },
-    {
-        title: 'Node.js',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-plain-wordmark.svg',
-        website: 'https://nodejs.org/en/docs'
-    },
-    {
-        title: 'PostgreSQL',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original-wordmark.svg',
-        website: 'https://www.postgresql.org/'
     },
     {
         title: 'Tailwind',
