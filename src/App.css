@@ -661,6 +661,13 @@ a:hover .qualification-title, a:hover .qualification-role {
   .privacy-policy-statement{
     width: 90%;
   }
+  .qualifications {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .projects, .qualifications {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width:480px) {
