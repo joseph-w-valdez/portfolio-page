@@ -5,7 +5,6 @@ import Header from './Header';
 import Main from './Main';
 import BackToTop from './BackToTopButton';
 import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop';
-import { pagesConfig } from '../utilities/pagesConfig';
 
 const ParallaxContent = () => {
   const parallaxRef = useRef();
@@ -27,6 +26,7 @@ const ParallaxContent = () => {
     };
   }, []);
 
+  // check for window width both on mount and on window resize
   useLayoutEffect(() => {
     const handleResize = () => {
       let newPages = 4.05;
