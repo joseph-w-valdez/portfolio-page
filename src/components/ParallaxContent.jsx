@@ -5,6 +5,7 @@ import Header from './Header';
 import Main from './Main';
 import BackToTop from './BackToTopButton';
 import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop';
+import { pagesConfig } from '../utilities/pagesConfig';
 
 const ParallaxContent = () => {
   const parallaxRef = useRef();
@@ -58,10 +59,11 @@ const ParallaxContent = () => {
       }
       setPages(newPages);
     };
+    handleResize(); // call the function on mount
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-
+  
   return (
     <div>
       <Parallax key={pages} ref={parallaxRef} pages={pages} className='parallax'>
