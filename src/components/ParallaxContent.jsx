@@ -24,10 +24,10 @@ const ParallaxContent = () => {
     return () => {
       container.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [pages]);
 
   // check for window width both on mount and on window resize
-  useLayoutEffect(() => {
+  useEffect(() => {
     const handleResize = () => {
       let newPages = 4.05;
       if (window.innerWidth < 1484) {
@@ -60,6 +60,7 @@ const ParallaxContent = () => {
       setPages(newPages);
     };
     handleResize(); // call the function on mount
+    handleScroll();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
