@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect, useState, useLayoutEffect } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import Header from './Header';
@@ -9,6 +9,7 @@ import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop';
 const ParallaxContent = () => {
   const parallaxRef = useRef();
   const [showBackToTop, setShowBackToTop] = useState(false);
+  const [pages, setPages] = useState(4.05);
 
   const handleScroll = () => {
     if (parallaxRef.current) {
@@ -25,38 +26,45 @@ const ParallaxContent = () => {
     };
   }, []);
 
-  let pages = 4.05;
-  if (window.innerWidth < 1484) {
-    pages = 4.2;
-  }
-  if (window.innerWidth < 1350) {
-    pages = 4.3;
-  }
-  if (window.innerWidth < 1130) {
-    pages = 4.45
-  }
-  if (window.innerWidth < 1050) {
-    pages = 4.6
-  }
-  if (window.innerWidth < 1001) {
-    pages = 4.8
-  }
-  if (window.innerWidth < 880) {
-    pages = 5
-  }
-  if (window.innerWidth < 856) {
-    pages = 5.2
-  }
-  if (window.innerWidth < 768) {
-    pages = 5.6
-  }
-  if (window.innerWidth < 650) {
-    pages = 5.8
-  }
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      let newPages = 4.05;
+      if (window.innerWidth < 1484) {
+        newPages = 4.2;
+      }
+      if (window.innerWidth < 1350) {
+        newPages = 4.3;
+      }
+      if (window.innerWidth < 1130) {
+        newPages = 4.45
+      }
+      if (window.innerWidth < 1050) {
+        newPages = 4.6
+      }
+      if (window.innerWidth < 1001) {
+        newPages = 4.8
+      }
+      if (window.innerWidth < 880) {
+        newPages = 5
+      }
+      if (window.innerWidth < 856) {
+        newPages = 5.2
+      }
+      if (window.innerWidth < 768) {
+        newPages = 5.6
+      }
+      if (window.innerWidth < 650) {
+        newPages = 5.8
+      }
+      setPages(newPages);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div>
-      <Parallax ref={parallaxRef} pages={pages} className='parallax'>
+      <Parallax key={pages} ref={parallaxRef} pages={pages} className='parallax'>
         <ParallaxLayer speed={0} factor={5}>
           <img src="../images/6th.png" alt='' className='background'/>
         </ParallaxLayer>
