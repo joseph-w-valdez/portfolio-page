@@ -11,6 +11,11 @@ const ContactForm = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   const onSubmit = async (data) => {
+    // Check if bot field is filled in
+    if (data['bot-field']) {
+      return setErrorMessage('Sorry, this form submission looks suspicious. Please try again.');
+    }
+  
     try {
       await formSubmission(data);
       setSuccessMessage('Thank you for your message!');
@@ -21,6 +26,7 @@ const ContactForm = () => {
       setErrorMessage(error.message || 'There was an error sending your message.');
     }
   };
+  
 
   const handleFocus = () => {
     if (successMessage) {
@@ -88,6 +94,7 @@ const ContactForm = () => {
             </>
           )}
         </div>
+        <input type="text" name="bot-field" style={{display: 'none'}} />
         <div className="flex-basis"></div>
         <button type="submit" >Submit</button>
       </form>
