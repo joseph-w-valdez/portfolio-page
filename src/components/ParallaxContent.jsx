@@ -25,9 +25,38 @@ const ParallaxContent = () => {
     };
   }, []);
 
+  let pages = 4.05;
+  if (window.innerWidth < 1484) {
+    pages = 4.2;
+  }
+  if (window.innerWidth < 1350) {
+    pages = 4.3;
+  }
+  if (window.innerWidth < 1130) {
+    pages = 4.45
+  }
+  if (window.innerWidth < 1050) {
+    pages = 4.6
+  }
+  if (window.innerWidth < 1001) {
+    pages = 4.8
+  }
+  if (window.innerWidth < 880) {
+    pages = 5
+  }
+  if (window.innerWidth < 856) {
+    pages = 5.2
+  }
+  if (window.innerWidth < 768) {
+    pages = 5.6
+  }
+  if (window.innerWidth < 650) {
+    pages = 5.8
+  }
+
   return (
     <div>
-      <Parallax ref={parallaxRef} pages={4.05} className='parallax'>
+      <Parallax ref={parallaxRef} pages={pages} className='parallax'>
         <ParallaxLayer speed={0} factor={5}>
           <img src="../images/6th.png" alt='' className='background'/>
         </ParallaxLayer>
@@ -61,4 +90,4 @@ const ParallaxContent = () => {
   )
 }
 
-export default ParallaxContent
+export default ParallaxContent;
