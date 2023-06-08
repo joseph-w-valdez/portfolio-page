@@ -19,6 +19,6 @@ export const projectsData = [
       ],
       liveLink: 'https://valochecker.netlify.app/',
       repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
-      imageSrc: 'https://github.com/joseph-w-valdez/Valorant-Checker/blob/main/public/assets/images/valorant-logo.png',
+      imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/public/assets/images/valorant-logo.png',
     },
   ];
