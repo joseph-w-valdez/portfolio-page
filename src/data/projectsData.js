@@ -17,8 +17,8 @@ export const projectsData = [
         '• The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.',
         '• The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.'
       ],
-      liveLink: 'https://joseph-w-valdez.github.io/Valorant-Checker/',
-      repoLink: 'https://github.com/joseph-w-valdez/ajax-project',
+      liveLink: 'https://valochecker.netlify.app/',
+      repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
       imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/images/valorant-logo.png',
     },
   ];
