@@ -8,7 +8,7 @@ export const qualificationsData = [
       description: [
         'Full Immersion Program for a career in Software Development in a simulated, agile work environment.',
         'Over 800 hours of web development programming (70 hours/week), going over critical concepts, including:',
-      ], 
+      ],
       bulletpoints: [
         '• Fundamentals of Web Development (HTML5, CSS3, JavaScript - ES5/6), Flexbox, Git, AJAX, JSON, and APIs',
         '• Problem-Solving, Debugging, Project Planning in Agile, and Collaboration',
@@ -21,7 +21,7 @@ export const qualificationsData = [
       institution: 'Robert Gardner, Ph.D',
       role: 'Software Development Instructor',
       logoUrl:
-        'https://media.licdn.com/dms/image/C4E03AQFCVpKOnAeOUA/profile-displayphoto-shrink_100_100/0/1516167350883?e=1686182400&v=beta&t=UQ0WoZHbV5LnN9u75ChkqLs9oJ82V1PHOUQONGlNLZU',
+        'https://media.licdn.com/dms/image/C4E03AQFCVpKOnAeOUA/profile-displayphoto-shrink_100_100/0/1516167350883?e=1691625600&v=beta&t=TIOXnapoOdqRXMFQq-c0ZqSEBEG5T0FFdwqzEE_p-00',
       dates: 'March 22, 2023, Robert was Joseph\'s teacher',
       href: 'https://www.linkedin.com/in/joseph-w-valdez/details/recommendations/',
       description: [
@@ -34,4 +34,3 @@ export const qualificationsData = [
       ]
     }
   ];
-  
