@@ -14,8 +14,10 @@ export const projectsData = [
     {
       title: 'ValoChecker',
       description: [
-        '• The dynamic application utilizes the Valorant API to display information about playable characters and weapons. The frontend was built using HTML5 with modular view swapping for a seamless user experience. Dynamic responsiveness was also implemented for multiple viewports.',
-        '• The application features a custom filter table built with CSS3 and JavaScript, mimicking radio buttons with tailored styling. JavaScript was used to create new XMLHTTPRequests, which populate the page with corresponding data based on user-selected filters.'
+        '• A dynamic full-stack application using TypeScript, React, and Tailwind CSS to retrieve and showcase various up-to-date information from the unofficial Valorant API',
+        • 'Utilizes React Router for efficient navigation and routing within the application, allowing users to explore different sections and details',
+        • 'Implements dynamically created URLs with :params, enabling users to access specific character or weapon details directly, allowing for easy sharing, bookmarking, and reloading of these pages.',
+        • 'Showcases problem-solving skills by developing custom helper functions to efficiently manipulate and process the API data, ensuring accurate and user-friendly information display.'
       ],
       liveLink: 'https://valochecker.app/',
       repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
