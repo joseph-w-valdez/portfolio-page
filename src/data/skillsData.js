@@ -5,6 +5,11 @@ export const skillsData = [
         website: 'https://reactjs.org/docs/hooks-intro.html'
     },
     {
+        title: 'TypeScript',
+        logo: 'https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg',
+        website: 'https://www.typescriptlang.org/'
+    },
+    {
         title: 'ES6',
         logo: 'https://github.com/devicons/devicon/raw/master/icons/javascript/javascript-original.svg',
         website: 'https://www.ecma-international.org/ecma-262/6.0/'
