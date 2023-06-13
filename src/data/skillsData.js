@@ -56,7 +56,7 @@ export const skillsData = [
     },
     {
         title: 'Heroku',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/heroku/heroku-original-wordmark.svg',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/heroku/heroku-original.svg',
         website: 'https://www.heroku.com/'
     },
     {
