@@ -16,7 +16,7 @@ export const skillsData = [
     },
     {
         title: 'Node.js',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-plain-wordmark.svg',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg',
         website: 'https://nodejs.org/en/docs'
     },
     {
@@ -26,7 +26,7 @@ export const skillsData = [
     },
     {
         title: 'PostgreSQL',
-        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original-wordmark.svg',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/postgresql/postgresql-original.svg',
         website: 'https://www.postgresql.org/'
     },
     {
