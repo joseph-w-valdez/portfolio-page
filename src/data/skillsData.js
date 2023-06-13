@@ -6,7 +6,7 @@ export const skillsData = [
     },
     {
         title: 'TypeScript',
-        logo: 'https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg',
+        logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/typescript/typescript-original.svg',
         website: 'https://www.typescriptlang.org/'
     },
     {
