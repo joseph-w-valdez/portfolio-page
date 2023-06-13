@@ -15,9 +15,9 @@ export const projectsData = [
       title: 'ValoChecker',
       description: [
         '• A dynamic full-stack application using TypeScript, React, and Tailwind CSS to retrieve and showcase various up-to-date information from the unofficial Valorant API',
-        • 'Utilizes React Router for efficient navigation and routing within the application, allowing users to explore different sections and details',
-        • 'Implements dynamically created URLs with :params, enabling users to access specific character or weapon details directly, allowing for easy sharing, bookmarking, and reloading of these pages.',
-        • 'Showcases problem-solving skills by developing custom helper functions to efficiently manipulate and process the API data, ensuring accurate and user-friendly information display.'
+        '• Utilizes React Router for efficient navigation and routing within the application, allowing users to explore different sections and details',
+        '• Implements dynamically created URLs with :params, enabling users to access specific character or weapon details directly, allowing for easy sharing, bookmarking, and reloading of these pages.',
+        '• Showcases problem-solving skills by developing custom helper functions to efficiently manipulate and process the API data, ensuring accurate and user-friendly information display.'
       ],
       liveLink: 'https://valochecker.app/',
       repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
