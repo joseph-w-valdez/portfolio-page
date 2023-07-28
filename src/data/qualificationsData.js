@@ -2,7 +2,7 @@ export const qualificationsData = [
     {
       institution: 'LearningFuze',
       logoUrl:
-        'https://media.licdn.com/dms/image/C560BAQEimxlasi9TvQ/company-logo_100_100/0/1592771574713?e=1689206400&v=beta&t=9FPoN7kXbnv-CaYANa2HKE-P0x4O7H_Ay3dEaH7zm5A',
+        'https://media.licdn.com/dms/image/C560BAQEimxlasi9TvQ/company-logo_200_200/0/1592771574713?e=1698883200&v=beta&t=lZKaM2bQoi2q-jxuCbDjDrVD0utXtknT-Da74raSTbQ',
       dates: 'Nov 2022 - Mar 2023',
       href: 'https://learningfuze.com/',
       description: [
