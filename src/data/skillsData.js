@@ -15,6 +15,11 @@ export const skillsData = [
         website: 'https://www.ecma-international.org/ecma-262/6.0/'
     },
     {
+        title: 'Next 13',
+        logo: 'https://willstenzel.com/tools/nextjs-dark.png',
+        website: 'https://nextjs.org/'
+    },
+    {
         title: 'Node.js',
         logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/nodejs/nodejs-original.svg',
         website: 'https://nodejs.org/en/docs'
@@ -53,10 +58,5 @@ export const skillsData = [
         title: 'Photoshop',
         logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/photoshop/photoshop-plain.svg',
         website: 'https://www.adobe.com/products/photoshop.html'
-    },
-    {
-      title: 'Git',
-      logo: 'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/git/git-plain-wordmark.svg',
-      website: 'https://git-scm.com/'
     },
   ];
