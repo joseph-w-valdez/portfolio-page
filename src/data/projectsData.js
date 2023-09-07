@@ -1,5 +1,17 @@
 export const projectsData = [
     {
+      title: 'ValoChecker',
+      description: [
+        '• A dynamic full-stack application using TypeScript, React, and Tailwind CSS to retrieve and showcase various up-to-date information from the unofficial Valorant API',
+        '• Utilizes React Router for efficient navigation and routing within the application, allowing users to explore different sections and details',
+        '• Implements dynamically created URLs with :params, enabling users to access specific character or weapon details directly, allowing for easy sharing, bookmarking, and reloading of these pages.',
+        '• Showcases problem-solving skills by developing custom helper functions to efficiently manipulate and process the API data, ensuring accurate and user-friendly information display.'
+      ],
+      liveLink: 'https://valochecker.app/',
+      repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
+      imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/public/assets/images/valorant-logo.png',
+    },
+    {
       title: 'Marvelous',
       description: [
         '• A dynamic full-stack web application was built using JavaScript, Node.js, and React, which utilized the official Marvel Comics API. MD5 hashing was employed to access the Marvel API, and the frontend was built with React, React Router, and React Hook Form. The frontend was styled with Tailwind CSS.',
@@ -12,15 +24,15 @@ export const projectsData = [
       imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/marvelous/main/server/public/images/Marvelous.webp',
     },
     {
-      title: 'ValoChecker',
+      title: 'Olive Garden Fanpage (actively in development)',
       description: [
-        '• A dynamic full-stack application using TypeScript, React, and Tailwind CSS to retrieve and showcase various up-to-date information from the unofficial Valorant API',
-        '• Utilizes React Router for efficient navigation and routing within the application, allowing users to explore different sections and details',
-        '• Implements dynamically created URLs with :params, enabling users to access specific character or weapon details directly, allowing for easy sharing, bookmarking, and reloading of these pages.',
-        '• Showcases problem-solving skills by developing custom helper functions to efficiently manipulate and process the API data, ensuring accurate and user-friendly information display.'
+        '• Led development of a full-stack Olive Garden fanpage using Next.js 13, TypeScript, and Tailwind.',
+        '• Directed a small team and managed all phases including overall planning, daily standups, code reviews, and task allocation between members to maximize workflow.',
+        '• Engineered a custom API from the ground up with hand-crafted endpoints specifically designed to deliver data and enable proper front-end functionality.',
+        '• Implemented authentication with Firebase and MongoDB to track user data, such as favorites.'
       ],
-      liveLink: 'https://valochecker.app/',
-      repoLink: 'https://github.com/joseph-w-valdez/Valorant-Checker',
-      imageSrc: 'https://raw.githubusercontent.com/joseph-w-valdez/Valorant-Checker/main/public/assets/images/valorant-logo.png',
+      liveLink: 'https://olive-garden-fanpage.vercel.app/',
+      repoLink: 'https://github.com/joseph-w-valdez/olive-garden-fanpage',
+      imageSrc: 'https://github.com/joseph-w-valdez/olive-garden-fanpage/blob/main/fanpage/src/app/assets/images/icon.png?raw=true',
     },
   ];

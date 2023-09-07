@@ -21,7 +21,7 @@ export const qualificationsData = [
       institution: 'Robert Gardner, Ph.D',
       role: 'Software Development Instructor',
       logoUrl:
-        'https://media.licdn.com/dms/image/C4E03AQFCVpKOnAeOUA/profile-displayphoto-shrink_100_100/0/1516167350883?e=1691625600&v=beta&t=TIOXnapoOdqRXMFQq-c0ZqSEBEG5T0FFdwqzEE_p-00',
+        'https://media.licdn.com/dms/image/C4E03AQFCVpKOnAeOUA/profile-displayphoto-shrink_100_100/0/1516167351304?e=1699488000&v=beta&t=gOfzu6svG-yoQYRv45PY-MZU-DLsAWS5e4TQg4R4-C0',
       dates: 'March 22, 2023, Robert was Joseph\'s teacher',
       href: 'https://www.linkedin.com/in/joseph-w-valdez/details/recommendations/',
       description: [

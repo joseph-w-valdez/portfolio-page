@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState, useLayoutEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import Header from './Header';
@@ -9,7 +9,7 @@ import { parallaxScrollToTop as scrollToTop } from '../utilities/scrollToTop';
 const ParallaxContent = () => {
   const parallaxRef = useRef();
   const [showBackToTop, setShowBackToTop] = useState(false);
-  const [pages, setPages] = useState(4.05);
+  const [pages, setPages] = useState(5.05);
 
   const handleScroll = () => {
     if (parallaxRef.current) {
@@ -29,42 +29,42 @@ const ParallaxContent = () => {
   // check for window width both on mount and on window resize
   useEffect(() => {
     const handleResize = () => {
-      let newPages = 4.05;
+      let newPages = 5.4;
       if (window.innerWidth < 1484) {
-        newPages = 4.2;
+        newPages = 5.7;
       }
       if (window.innerWidth < 1350) {
-        newPages = 4.3;
+        newPages = 5.7;
       }
       if (window.innerWidth < 1130) {
-        newPages = 4.45
+        newPages = 5.9
       }
       if (window.innerWidth < 1050) {
-        newPages = 4.6
+        newPages = 6.1
       }
       if (window.innerWidth < 1001) {
-        newPages = 4.8
+        newPages = 6.4
       }
       if (window.innerWidth < 880) {
-        newPages = 5
+        newPages = 6.5
       }
       if (window.innerWidth < 856) {
-        newPages = 5.2
+        newPages = 7
       }
       if (window.innerWidth < 768) {
-        newPages = 5.6
+        newPages = 7.5
       }
       if (window.innerWidth < 650) {
-        newPages = 5.8
+        newPages = 7.7
       }
       setPages(newPages);
     };
-    handleResize(); // call the function on mount
+    handleResize();
     handleScroll();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  
+
   return (
     <div>
       <Parallax key={pages} ref={parallaxRef} pages={pages} className='parallax'>

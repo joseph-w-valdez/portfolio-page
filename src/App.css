@@ -261,19 +261,22 @@ main>p {
 	object-fit: contain
 }
 
-.project-links {
+.project-links,
+.work-links {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	text-decoration: underline
 }
 
-.project-link {
+.project-link,
+.work-link {
 	margin: 5px
 }
 
 a.project-link,
-a.social-link {
+a.social-link,
+a.work-link {
 	margin-right: 5rem;
 	color: #fff;
 	transition: transform .3s ease-in-out;
@@ -553,59 +556,70 @@ span.privacy-policy {
 	margin: 0 0 10px
 }
 
-.qualification {
+.qualification,
+.work-experience {
 	border: 2px solid #fff;
 	max-width: 80%;
 	border-radius: 20px;
 	padding: 20px;
 	margin: 0 20px 30px;
-	transition: background-color .4s
+	transition: background-color .4s;
 }
 
-.qualifications-section a {
+.qualifications-section a,
+.professional-work-section a {
 	text-decoration: none;
 	color: #fff
 }
 
-.qualification:hover {
+.qualification:hover,
+.work-experience:hover {
 	background-color: #1c3255
 }
 
 a.project-link:hover,
-a.skill:hover {
+a.skill:hover,
+a.work-link:hover {
 	color: #ebdf43
 }
 
 a:hover .qualification-role,
-a:hover .qualification-title {
+a:hover .qualification-title,
+a:hover .work-experience-title {
 	color: #ebdf43
 }
 
-.qualifications-section img {
+.qualifications-section img,
+.professional-work-section img {
 	width: 100px;
 	margin-right: 15px;
 	border-radius: 10px
 }
 
-.qualifications-section .title-logo-container {
+.qualifications-section .title-logo-container
+.professional-work-section .title-logo-container {
 	display: flex
 }
 
-.qualification-title {
+.qualification-title,
+.work-experience-title {
 	margin-bottom: 5px
 }
 
-.qualification-role {
+.qualification-role,
+.work-experience-role {
 	margin: 5px 0;
 	font-weight: lighter
 }
 
-.qualification-date {
+.qualification-date,
+.work-experience-date {
 	margin-top: 0;
 	color: #b4b4b4
 }
 
-.qualification-bullet {
+.qualification-bullet,
+.work-experience-bullet {
 	margin: 0
 }
 

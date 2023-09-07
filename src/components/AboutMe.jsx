@@ -8,8 +8,8 @@ const AboutMe = () => {
         from: { opacity: 0 },
         config: { duration: 1000 },
       })
-    
-    
+
+
   return (
     <div className='about-me section'>
         <h1 style={fade} className='name-header'>Hello! My name is Joseph!</h1>
@@ -27,7 +27,7 @@ const AboutMe = () => {
             I'm excited to keep moving forward in this industry and solving problems with a like-minded group of teammates and continuing this path of ongoing growth!
           </p>
         </div>
-        <div className="profile-picture-frame"><img src="https://avatars.githubusercontent.com/u/117682160?v=4" alt="profile-picture" className='profile-picture'/></div>
+        <div className="profile-picture-frame"><img src="https://avatars.githubusercontent.com/u/117682160?v=4" alt="profile" className='profile-picture'/></div>
     </div>
   )
 }

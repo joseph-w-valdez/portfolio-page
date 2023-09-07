@@ -5,10 +5,11 @@ import Projects from './Projects'
 import Skills from './Skills'
 import ContactMe from './ContactMe'
 import Qualifications from './Qualifications'
+import ProfessionalWork from './ProfessionalWork'
 
 const Main = () => {
 
-  
+
   return (
     <main>
       <div className="content-container">
@@ -17,6 +18,8 @@ const Main = () => {
       <Skills />
       <NewLine />
       <Projects />
+      <NewLine />
+      <ProfessionalWork />
       <NewLine />
       <Qualifications />
       <NewLine />
